@@ -1,0 +1,47 @@
+# LAB TEST 4: Network Probe Target Pod in ai-inference namespace
+# Used to verify that East-West lateral movement from payments-processing is BLOCKED by Default Deny.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: network-probe-target
+  namespace: ai-inference
+  labels:
+    test: network-probe-target
+    app: backend-target
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 10001
+    runAsGroup: 10001
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+  - name: server
+    image: mirror.gcr.io/library/nginx:alpine
+    ports:
+    - containerPort: 8080
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      capabilities:
+        drop:
+        - ALL
+    volumeMounts:
+    - name: tmp-fs
+      mountPath: /tmp
+    - name: var-cache-nginx
+      mountPath: /var/cache/nginx
+    - name: var-run
+      mountPath: /var/run
+  volumes:
+  - name: tmp-fs
+    emptyDir:
+      medium: Memory
+  - name: var-cache-nginx
+    emptyDir:
+      medium: Memory
+  - name: var-run
+    emptyDir:
+      medium: Memory
+
+# created by @jsaccomani
