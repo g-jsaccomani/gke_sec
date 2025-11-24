@@ -1,0 +1,35 @@
+# LAB TEST 3: Network Probe Source Pod
+# Used to test Zero-Trust Network Policies and Dataplane V2 (eBPF) Drops
+apiVersion: v1
+kind: Pod
+metadata:
+  name: network-probe-source
+  namespace: payments-processing
+  labels:
+    test: network-probe-source
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 10001
+    runAsGroup: 10001
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+  - name: probe
+    image: mirror.gcr.io/library/busybox:latest
+    command: ["/bin/sh", "-c", "sleep 3600"]
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      capabilities:
+        drop:
+        - ALL
+    volumeMounts:
+    - name: tmp-fs
+      mountPath: /tmp
+  volumes:
+  - name: tmp-fs
+    emptyDir:
+      medium: Memory
+
+# created by @jsaccomani
