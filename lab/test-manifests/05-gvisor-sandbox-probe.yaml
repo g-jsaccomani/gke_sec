@@ -1,0 +1,38 @@
+# LAB TEST 5: GKE Sandbox (gVisor) Virtualized Kernel Verification Pod
+# Checks whether the pod runs under the gVisor sandbox kernel runtime.
+# In gVisor, 'dmesg' is blocked or returns gVisor specific log messages, and
+# 'uname -a' or kernel syscall behavior reflects the virtualized user-space kernel.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gvisor-probe-pod
+  namespace: ai-inference
+  labels:
+    test: gvisor-verification
+spec:
+  runtimeClassName: gvisor
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 10001
+    runAsGroup: 10001
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+  - name: probe
+    image: mirror.gcr.io/library/busybox:latest
+    command: ["/bin/sh", "-c", "echo '=== GVISOR RUNTIME DIAGNOSTIC ==='; uname -a; dmesg 2>&1 || true; sleep 3600"]
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      capabilities:
+        drop:
+        - ALL
+    volumeMounts:
+    - name: tmp-fs
+      mountPath: /tmp
+  volumes:
+  - name: tmp-fs
+    emptyDir:
+      medium: Memory
+
+# created by @jsaccomani
