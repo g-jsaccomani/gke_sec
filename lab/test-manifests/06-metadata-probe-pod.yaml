@@ -1,0 +1,36 @@
+# LAB TEST 6: Metadata Server Protection & SSRF Probe Pod
+# Tests whether direct, unauthenticated extraction of GCP metadata (169.254.169.254)
+# is properly intercepted by GKE Workload Identity Metadata Server or blocked by NetworkPolicy.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: metadata-probe-pod
+  namespace: ai-inference
+  labels:
+    test: metadata-probe
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 10001
+    runAsGroup: 10001
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+  - name: probe
+    image: mirror.gcr.io/library/curlimages/curl:latest
+    command: ["/bin/sh", "-c", "sleep 3600"]
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      capabilities:
+        drop:
+        - ALL
+    volumeMounts:
+    - name: tmp-fs
+      mountPath: /tmp
+  volumes:
+  - name: tmp-fs
+    emptyDir:
+      medium: Memory
+
+# created by @jsaccomani
