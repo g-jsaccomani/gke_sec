@@ -1,0 +1,28 @@
+# LAB TEST 2: Bare pod without explicit securityContext
+# Deployed in payments-processing namespace where Kyverno mutation policy is active.
+# EXPECTED OUTCOME: Kyverno mutates the pod, automatically injecting:
+# - runAsNonRoot: true
+# - allowPrivilegeEscalation: false
+# - readOnlyRootFilesystem: true
+# - drop: ["ALL"] capabilities
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bare-developer-pod
+  namespace: payments-processing
+  labels:
+    test: kyverno-mutation
+spec:
+  containers:
+  - name: app
+    image: mirror.gcr.io/library/nginx:alpine
+    command: ["/bin/sh", "-c", "echo 'Running mutated pod...'; sleep 3600"]
+    volumeMounts:
+    - name: tmp-fs
+      mountPath: /tmp
+  volumes:
+  - name: tmp-fs
+    emptyDir:
+      medium: Memory
+
+# created by @jsaccomani
