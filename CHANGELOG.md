@@ -8,3 +8,6 @@ All notable changes and security updates recorded below.
 ### [2025-12-02] feat(gke): configure hardened cluster specification with Shielded Nodes and Private Endpoint
 - Completed milestone deliverables and technical verification.
 
+### [2025-12-16] sec(network-policy): implement default-deny and intra-app network isolation policies
+- Completed milestone deliverables and technical verification.
+
