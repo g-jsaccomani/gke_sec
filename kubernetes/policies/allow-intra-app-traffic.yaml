@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-cde-ingress-traffic
+  namespace: payments-processing
+spec:
+  podSelector:
+    matchLabels:
+      app: payment-processor
+  policyTypes:
+  - Ingress
+  ingress:
+  # Allow Ingress from GKE Gateway / Load Balancer Health Checks & Proxies
+  - from:
+    - namespaceSelector: {}
+      podSelector:
+        matchLabels:
+          app.kubernetes.io/name: ingress-gateway
+    ports:
+    - protocol: TCP
+      port: 8080
+    - protocol: TCP
+      port: 8443
+
+# created by @jsaccomani
