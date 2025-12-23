@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sandboxed-ai-worker
+  namespace: ai-inference
+  labels:
+    app: sandboxed-ai-worker
+    security.gke.io/sandbox: gvisor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sandboxed-ai-worker
+  template:
+    metadata:
+      labels:
+        app: sandboxed-ai-worker
+    spec:
+      # GKE Sandbox gVisor runtime class
+      runtimeClassName: gvisor
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+      - name: worker
+        image: mirror.gcr.io/library/busybox:latest
+        command: ["/bin/sh", "-c", "echo 'Sandboxed gVisor Worker Running...'; sleep 3600"]
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+            - ALL
+        resources:
+          requests:
+            cpu: 100m
+            memory: 64Mi
+          limits:
+            cpu: 250m
+            memory: 128Mi
+
+# created by @jsaccomani
