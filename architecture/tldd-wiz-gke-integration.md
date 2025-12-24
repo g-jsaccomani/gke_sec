@@ -138,3 +138,5 @@ This matrix governs incident boundaries between the **Google Cloud PSO Team**, *
 ---
 *Copyright © 2026 Google LLC. Developed by Joabson Saccomani (@jsaccomani).*
 *Licensed under the Apache License, Version 2.0.*
+
+<!-- Checkpoint: 2025-12-24 - sec(binary-auth): enforce container image signature validation for client production clusters -->
