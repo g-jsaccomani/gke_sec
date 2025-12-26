@@ -231,3 +231,5 @@ For the step-by-step guide with 10 practical lab modules, see **[lab/README.md](
 **LinkedIn:** [linkedin.com/in/jsaccomani](https://www.linkedin.com/in/jsaccomani)
 *Copyright © 2026 Google LLC / Joabson Saccomani. All rights reserved. Distributed under the Apache License 2.0.*
 
+
+<!-- Checkpoint: 2025-12-26 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
