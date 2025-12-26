@@ -61,3 +61,5 @@ This guide defines the reference security architecture for Google Kubernetes Eng
 **LinkedIn:** [linkedin.com/in/jsaccomani](https://www.linkedin.com/in/jsaccomani)
 *Copyright © 2026 Google LLC / Joabson Saccomani. All rights reserved. Distributed under the Apache License 2.0.*
 
+
+<!-- Checkpoint: 2025-12-26 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
