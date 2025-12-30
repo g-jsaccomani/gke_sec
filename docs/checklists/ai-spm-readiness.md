@@ -34,3 +34,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 *Licensed under the Apache License, Version 2.0.*
 
 <!-- Checkpoint: 2025-12-29 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
+
+<!-- Checkpoint: 2025-12-30 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
