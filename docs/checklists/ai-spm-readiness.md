@@ -32,3 +32,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 ---
 *Copyright © 2026 Google LLC. Developed by Joabson Saccomani (@jsaccomani).*
 *Licensed under the Apache License, Version 2.0.*
+
+<!-- Checkpoint: 2025-12-29 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
