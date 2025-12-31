@@ -63,3 +63,5 @@ This guide defines the reference security architecture for Google Kubernetes Eng
 
 
 <!-- Checkpoint: 2025-12-26 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2025-12-31 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
