@@ -13,3 +13,5 @@ Your report will be evaluated and responded to as soon as possible.
 <!-- Checkpoint: 2025-12-30 - sec(binary-auth): enforce container image signature validation for client production clusters -->
 
 <!-- Checkpoint: 2025-12-31 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-01-06 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
