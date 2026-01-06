@@ -204,3 +204,5 @@ Execute the automated validation script:
 **LinkedIn:** [linkedin.com/in/jsaccomani](https://www.linkedin.com/in/jsaccomani)
 *Copyright © 2026 Google LLC / Joabson Saccomani. All rights reserved. Distributed under the Apache License 2.0.*
 
+
+<!-- Checkpoint: 2026-01-06 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
