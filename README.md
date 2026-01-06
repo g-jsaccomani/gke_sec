@@ -237,3 +237,5 @@ For the step-by-step guide with 10 practical lab modules, see **[lab/README.md](
 <!-- Checkpoint: 2025-12-26 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
 
 <!-- Checkpoint: 2025-12-27 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-01-06 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
