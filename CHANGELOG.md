@@ -11,3 +11,6 @@ All notable changes and security updates recorded below.
 ### [2025-12-16] sec(network-policy): implement default-deny and intra-app network isolation policies
 - Completed milestone deliverables and technical verification.
 
+### [2026-01-06] sec(pod-security): deploy Kyverno mutation and validation rules for pod security admission
+- Completed milestone deliverables and technical verification.
+
