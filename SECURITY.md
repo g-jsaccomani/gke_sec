@@ -15,3 +15,5 @@ Your report will be evaluated and responded to as soon as possible.
 <!-- Checkpoint: 2025-12-31 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
 
 <!-- Checkpoint: 2026-01-06 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
+
+<!-- Checkpoint: 2026-01-12 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
