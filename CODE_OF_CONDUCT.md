@@ -13,3 +13,5 @@ Examples of behavior that contributes to a positive environment include:
 * Focusing on what is best for the community
 
 <!-- Checkpoint: 2026-01-09 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-01-12 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
