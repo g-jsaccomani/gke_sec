@@ -19,3 +19,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-01-13 - sec(binary-auth): enforce container image signature validation for client production clusters -->
 
 <!-- Checkpoint: 2026-01-14 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-01-19 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
