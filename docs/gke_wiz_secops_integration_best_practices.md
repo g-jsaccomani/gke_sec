@@ -61,3 +61,5 @@ This blueprint defines the unified architecture for Kubernetes workload protecti
 **LinkedIn:** [linkedin.com/in/jsaccomani](https://www.linkedin.com/in/jsaccomani)
 *Copyright © 2026 Google LLC / Joabson Saccomani. All rights reserved. Distributed under the Apache License 2.0.*
 
+
+<!-- Checkpoint: 2026-01-21 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
