@@ -63,3 +63,5 @@ This blueprint defines the unified architecture for Kubernetes workload protecti
 
 
 <!-- Checkpoint: 2026-01-21 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
+
+<!-- Checkpoint: 2026-01-23 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
