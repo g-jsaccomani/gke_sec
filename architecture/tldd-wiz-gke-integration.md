@@ -150,3 +150,5 @@ This matrix governs incident boundaries between the **Google Cloud PSO Team**, *
 <!-- Checkpoint: 2026-01-22 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
 
 <!-- Checkpoint: 2026-01-23 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
+
+<!-- Checkpoint: 2026-01-28 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
