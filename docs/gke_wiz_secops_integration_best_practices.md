@@ -67,3 +67,5 @@ This blueprint defines the unified architecture for Kubernetes workload protecti
 <!-- Checkpoint: 2026-01-23 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
 
 <!-- Checkpoint: 2026-01-23 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-01-28 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
