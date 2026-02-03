@@ -17,3 +17,6 @@ All notable changes and security updates recorded below.
 ### [2026-01-20] sec(gatekeeper): configure OPA Gatekeeper constraint to block untrusted images
 - Completed milestone deliverables and technical verification.
 
+### [2026-02-03] feat(workload-identity): configure GCP Workload Identity bindings and service accounts
+- Completed milestone deliverables and technical verification.
+
