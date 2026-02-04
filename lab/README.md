@@ -208,3 +208,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-01-06 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-01-23 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
+
+<!-- Checkpoint: 2026-02-04 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
