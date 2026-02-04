@@ -69,3 +69,5 @@ This blueprint defines the unified architecture for Kubernetes workload protecti
 <!-- Checkpoint: 2026-01-23 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
 
 <!-- Checkpoint: 2026-01-28 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
+
+<!-- Checkpoint: 2026-02-04 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
