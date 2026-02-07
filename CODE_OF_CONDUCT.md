@@ -29,3 +29,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-01-29 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
 
 <!-- Checkpoint: 2026-02-03 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
+
+<!-- Checkpoint: 2026-02-07 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
