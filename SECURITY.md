@@ -21,3 +21,5 @@ Your report will be evaluated and responded to as soon as possible.
 <!-- Checkpoint: 2026-01-29 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
 
 <!-- Checkpoint: 2026-02-05 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
+
+<!-- Checkpoint: 2026-02-07 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
