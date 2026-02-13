@@ -212,3 +212,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-02-04 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-02-04 - sec(binary-auth): enforce container image signature validation for client production clusters -->
+
+<!-- Checkpoint: 2026-02-13 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
