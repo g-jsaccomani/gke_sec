@@ -209,3 +209,6 @@ All notable changes and security updates recorded below.
 ### [2026-02-13] feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools
 - Enabled Shielded GKE Nodes with vTPM and kernel measurement verification.
 
+### [2026-02-16] refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices
+- Enforced PeerAuthentication STRICT mode across the entire service mesh data plane.
+
