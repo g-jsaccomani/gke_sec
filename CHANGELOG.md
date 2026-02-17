@@ -20,3 +20,6 @@ All notable changes and security updates recorded below.
 ### [2026-02-03] feat(workload-identity): configure GCP Workload Identity bindings and service accounts
 - Completed milestone deliverables and technical verification.
 
+### [2026-02-17] feat(storage): configure CSI Secret Manager provider and secure GCS FUSE storage mount
+- Completed milestone deliverables and technical verification.
+
