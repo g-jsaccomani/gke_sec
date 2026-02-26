@@ -27,3 +27,5 @@ Your report will be evaluated and responded to as soon as possible.
 <!-- Checkpoint: 2026-02-12 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
 
 <!-- Checkpoint: 2026-02-24 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-02-26 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
