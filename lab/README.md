@@ -218,3 +218,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-02-17 - sec(binary-auth): enforce container image signature validation for client production clusters -->
 
 <!-- Checkpoint: 2026-02-26 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
+
+<!-- Checkpoint: 2026-02-26 - sec(binary-auth): enforce container image signature validation for client production clusters -->
