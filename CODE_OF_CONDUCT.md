@@ -37,3 +37,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-02-16 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-02-24 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-03-01 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
