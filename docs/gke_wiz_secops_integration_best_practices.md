@@ -79,3 +79,5 @@ This blueprint defines the unified architecture for Kubernetes workload protecti
 <!-- Checkpoint: 2026-02-22 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-02-24 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
+
+<!-- Checkpoint: 2026-03-03 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
