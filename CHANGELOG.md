@@ -23,3 +23,6 @@ All notable changes and security updates recorded below.
 ### [2026-02-17] feat(storage): configure CSI Secret Manager provider and secure GCS FUSE storage mount
 - Completed milestone deliverables and technical verification.
 
+### [2026-03-03] feat(scheduling): configure Kueue GPU workload queue for AI inference clusters
+- Completed milestone deliverables and technical verification.
+
