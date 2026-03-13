@@ -37,3 +37,5 @@ Your report will be evaluated and responded to as soon as possible.
 <!-- Checkpoint: 2026-03-11 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
 
 <!-- Checkpoint: 2026-03-13 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
+
+<!-- Checkpoint: 2026-03-13 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
