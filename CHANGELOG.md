@@ -26,3 +26,6 @@ All notable changes and security updates recorded below.
 ### [2026-03-03] feat(scheduling): configure Kueue GPU workload queue for AI inference clusters
 - Completed milestone deliverables and technical verification.
 
+### [2026-03-17] sec(sandboxing): configure gVisor sandboxed workload runtime for untrusted code execution
+- Completed milestone deliverables and technical verification.
+

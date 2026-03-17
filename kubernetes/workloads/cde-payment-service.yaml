@@ -1,0 +1,96 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cde-payment-processor
+  namespace: payments-processing
+  labels:
+    app: payment-processor
+    tier: api
+    compliance: pci-dss-cde
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: payment-processor
+  template:
+    metadata:
+      labels:
+        app: payment-processor
+        tier: api
+    spec:
+      serviceAccountName: cde-payment-sa
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+      - name: payment-api
+        image: mirror.gcr.io/library/nginx:alpine
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+          name: http
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+            - ALL
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 500m
+            memory: 256Mi
+        volumeMounts:
+        - name: tmp-volume
+          mountPath: /tmp
+        - name: var-cache-nginx
+          mountPath: /var/cache/nginx
+        - name: var-run
+          mountPath: /var/run
+        - name: secrets-store-inline
+          mountPath: /etc/secrets
+          readOnly: true
+      volumes:
+      - name: tmp-volume
+        emptyDir:
+          medium: Memory
+          sizeLimit: 64Mi
+      - name: var-cache-nginx
+        emptyDir:
+          medium: Memory
+          sizeLimit: 64Mi
+      - name: var-run
+        emptyDir:
+          medium: Memory
+          sizeLimit: 16Mi
+      - name: secrets-store-inline
+        csi:
+          driver: secrets-store.csi.k8s.io
+          readOnly: true
+          volumeAttributes:
+            secretProviderClass: gcp-database-secret-provider
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: transaction-router-service
+  namespace: payments-processing
+  labels:
+    app: payment-processor
+spec:
+  type: ClusterIP
+  ports:
+  - port: 443
+    targetPort: 8080
+    protocol: TCP
+    name: https
+  selector:
+    app: payment-processor
+
+# created by @jsaccomani
