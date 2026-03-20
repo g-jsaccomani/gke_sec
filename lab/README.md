@@ -224,3 +224,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-03-02 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
 
 <!-- Checkpoint: 2026-03-16 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
+
+<!-- Checkpoint: 2026-03-20 - sec(binary-auth): enforce container image signature validation for client production clusters -->
