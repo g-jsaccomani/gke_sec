@@ -230,3 +230,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-03-20 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
 
 <!-- Checkpoint: 2026-03-23 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-03-23 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
