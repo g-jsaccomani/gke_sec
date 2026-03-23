@@ -228,3 +228,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-03-20 - sec(binary-auth): enforce container image signature validation for client production clusters -->
 
 <!-- Checkpoint: 2026-03-20 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-03-23 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
