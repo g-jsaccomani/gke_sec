@@ -39,3 +39,5 @@ Your report will be evaluated and responded to as soon as possible.
 <!-- Checkpoint: 2026-03-13 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
 
 <!-- Checkpoint: 2026-03-13 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-03-23 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
