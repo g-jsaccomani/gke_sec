@@ -164,3 +164,5 @@ This matrix governs incident boundaries between the **Google Cloud PSO Team**, *
 <!-- Checkpoint: 2026-03-02 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
 
 <!-- Checkpoint: 2026-03-03 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
+
+<!-- Checkpoint: 2026-03-24 - sec(binary-auth): enforce container image signature validation for client production clusters -->
