@@ -43,3 +43,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-03-17 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
 
 <!-- Checkpoint: 2026-03-23 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
+
+<!-- Checkpoint: 2026-03-25 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
