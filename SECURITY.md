@@ -43,3 +43,5 @@ Your report will be evaluated and responded to as soon as possible.
 <!-- Checkpoint: 2026-03-23 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-03-24 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
+
+<!-- Checkpoint: 2026-03-25 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
