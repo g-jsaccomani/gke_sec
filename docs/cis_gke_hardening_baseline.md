@@ -85,3 +85,5 @@ This guide defines the reference security architecture for Google Kubernetes Eng
 <!-- Checkpoint: 2026-02-27 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
 
 <!-- Checkpoint: 2026-03-20 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
+
+<!-- Checkpoint: 2026-03-30 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
