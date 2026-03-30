@@ -275,3 +275,5 @@ For the step-by-step guide with 10 practical lab modules, see **[lab/README.md](
 <!-- Checkpoint: 2026-03-18 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-03-30 - sec(binary-auth): enforce container image signature validation for client production clusters -->
+
+<!-- Checkpoint: 2026-03-30 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
