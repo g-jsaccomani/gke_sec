@@ -29,3 +29,6 @@ All notable changes and security updates recorded below.
 ### [2026-03-17] sec(sandboxing): configure gVisor sandboxed workload runtime for untrusted code execution
 - Completed milestone deliverables and technical verification.
 
+### [2026-03-31] feat(cloud-armor): deploy Cloud Armor edge security policies and Gateway API ingress manifests
+- Completed milestone deliverables and technical verification.
+

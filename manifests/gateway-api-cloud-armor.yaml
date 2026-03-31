@@ -1,0 +1,56 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: gke-cde-gateway
+  namespace: payments-processing
+spec:
+  gatewayClassName: gke-l7-global-external-managed
+  listeners:
+  - name: https
+    protocol: HTTPS
+    port: 443
+    tls:
+      mode: Terminate
+      certificateRefs:
+      - name: enterprise-tls-cert
+  - name: http
+    protocol: HTTP
+    port: 80
+    allowedRoutes:
+      namespaces:
+        from: Same
+---
+apiVersion: networking.gke.io/v1
+kind: GCPBackendPolicy
+metadata:
+  name: cde-cloud-armor-policy
+  namespace: payments-processing
+spec:
+  default:
+    securityPolicy: enterprise-owasp-policy
+    logging:
+      enable: true
+      sampleRate: 1.0
+  targetRef:
+    group: ""
+    kind: Service
+    name: transaction-router-service
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: payments-api-route
+  namespace: payments-processing
+spec:
+  parentRefs:
+  - name: gke-cde-gateway
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /api/v1/payments
+    backendRefs:
+    - name: transaction-router-service
+      port: 443
+
+# created by @jsaccomani
