@@ -89,3 +89,5 @@ This guide defines the reference security architecture for Google Kubernetes Eng
 <!-- Checkpoint: 2026-03-30 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
 
 <!-- Checkpoint: 2026-04-06 - sec(binary-auth): enforce container image signature validation for client production clusters -->
+
+<!-- Checkpoint: 2026-04-08 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
