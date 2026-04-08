@@ -419,3 +419,6 @@ All notable changes and security updates recorded below.
 ### [2026-04-06] fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster
 - Deployed Calico/GKE Datapath v2 network policies enforcing default-deny egress rules.
 
+### [2026-04-08] sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams
+- Enforced Restricted Pod Security Standard admission controller across all non-system namespaces.
+
