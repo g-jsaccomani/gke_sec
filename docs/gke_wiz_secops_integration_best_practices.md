@@ -87,3 +87,5 @@ This blueprint defines the unified architecture for Kubernetes workload protecti
 <!-- Checkpoint: 2026-03-27 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
 
 <!-- Checkpoint: 2026-03-28 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
+
+<!-- Checkpoint: 2026-04-14 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
