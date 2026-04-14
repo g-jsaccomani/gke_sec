@@ -32,3 +32,6 @@ All notable changes and security updates recorded below.
 ### [2026-03-31] feat(cloud-armor): deploy Cloud Armor edge security policies and Gateway API ingress manifests
 - Completed milestone deliverables and technical verification.
 
+### [2026-04-14] sec(telemetry): configure BigQuery audit sink and Cloud Logging export filters
+- Completed milestone deliverables and technical verification.
+
