@@ -91,3 +91,5 @@ This guide defines the reference security architecture for Google Kubernetes Eng
 <!-- Checkpoint: 2026-04-06 - sec(binary-auth): enforce container image signature validation for client production clusters -->
 
 <!-- Checkpoint: 2026-04-08 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-04-15 - sec(binary-auth): enforce container image signature validation for client production clusters -->
