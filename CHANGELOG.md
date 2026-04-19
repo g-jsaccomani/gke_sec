@@ -458,3 +458,6 @@ All notable changes and security updates recorded below.
 ### [2026-04-17] sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist
 - Deployed Open Policy Agent Gatekeeper constraints restricting image downloads to client Artifact Registry.
 
+### [2026-04-19] sec(binary-auth): enforce container image signature validation for client production clusters
+- Configured Google Cloud Binary Authorization with Cosign and KMS asymmetric attestation keys.
+
