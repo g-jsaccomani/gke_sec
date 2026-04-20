@@ -238,3 +238,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-04-03 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
 
 <!-- Checkpoint: 2026-04-13 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
+
+<!-- Checkpoint: 2026-04-20 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
