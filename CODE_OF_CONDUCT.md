@@ -47,3 +47,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-03-25 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
 
 <!-- Checkpoint: 2026-04-06 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
+
+<!-- Checkpoint: 2026-04-27 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->

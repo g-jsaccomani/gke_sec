@@ -485,3 +485,6 @@ All notable changes and security updates recorded below.
 ### [2026-04-27] sec(binary-auth): enforce container image signature validation for client production clusters
 - Configured Google Cloud Binary Authorization with Cosign and KMS asymmetric attestation keys.
 
+### [2026-04-27] feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps
+- Eliminated static JSON credentials by mapping Kubernetes Service Accounts (KSA) to Google IAM (GSA).
+
