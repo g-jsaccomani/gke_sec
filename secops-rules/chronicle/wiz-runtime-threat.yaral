@@ -1,0 +1,55 @@
+rule wiz_runtime_gke_threat_correlation_v3 {
+  meta:
+    author = "Google Cloud PSO & Wiz Threat Research"
+    description = "Correlates GKE Workload Identity credential creations with high-priority eBPF sensor process anomaly alerts based on the official UDM mapping schema."
+    severity = "CRITICAL"
+    mitre_attack_tactic = "Execution, Privilege Escalation, Credential Access"
+    mitre_attack_technique = "T1610, T1059, T1134"
+
+  events:
+    // Event A: Runtime Threat Telemetry mapped directly via the Wiz JSON-to-UDM Parser
+    $wiz.metadata.vendor_name = "WIZ_IO"
+    $wiz.metadata.product_name = "WIZ_IO"
+    
+    // Normalization-aligned field assignments
+    $wiz.metadata.product_log_id = $detection_id                   // detection.id
+    $wiz.security_result.rule_name = $rule_heuristic                // detection.title
+    $wiz.security_result.severity = $normalized_severity            // detection.severity
+    $wiz.target.resource.attribute.labels["Pod Name"] = $pod_name    // entitySnapshot.tags.io.kubernetes.pod.name
+    $wiz.target.resource.attribute.labels["Pod Namespace"] = $ns     // entitySnapshot.tags.io.kubernetes.pod.namespace
+    $wiz.principal.process.file.full_path = $binary_path            // detection.triggeringEvents.runtimeDetails.processTree[0].path
+    $wiz.target.process.command_line = $malicious_cmd               // detection.triggeringEvents[0].runtimeDetails.processTree[0].command
+    $wiz.target.cloud.project.id = $project_id                      // account.externalId
+    $wiz.security_result.url_back_to_product = $console_url         // control.IssueURL
+
+    // High-severity process constraints triggered on the endpoint (eBPF verification)
+    (
+      $wiz.principal.process.file.full_path = "/bin/sh" or
+      $wiz.principal.process.file.full_path = "/bin/bash" or
+      re.regex($wiz.target.process.command_line, `.*(curl|wget|nicehash|nc|pause).*`)
+    )
+    $normalized_severity = "CRITICAL"
+
+    // Event B: GCP Control Plane Audit Log Ingestion (Workload Identity token exchange)
+    $gke.metadata.log_type = "GCP_CLOUDAUDIT"
+    $gke.metadata.product_name = "Google Kubernetes Engine"
+    $gke.metadata.product_event_type = "io.k8s.core.v1.serviceaccounts.token.create"
+    
+    $gke.target.cloud.project.id = $project_id
+    $gke.principal.namespace = $ns
+
+  match:
+    $project_id, $ns over 5m
+
+  outcome:
+    $risk_score = 99
+    $compromised_pod_host = array_distinct($pod_name)
+    $anomalous_binary = array_distinct($binary_path)
+    $anomalous_cmd_execution = array_distinct($malicious_cmd)
+    $wiz_graph_remediation_link = array_distinct($console_url)
+
+  condition:
+    $wiz and $gke
+}
+
+# created by @jsaccomani
