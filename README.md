@@ -285,3 +285,5 @@ For the step-by-step guide with 10 practical lab modules, see **[lab/README.md](
 <!-- Checkpoint: 2026-04-23 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
 
 <!-- Checkpoint: 2026-04-28 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-04-30 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
