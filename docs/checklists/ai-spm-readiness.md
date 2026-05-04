@@ -88,3 +88,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 <!-- Checkpoint: 2026-04-30 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-04-30 - sec(binary-auth): enforce container image signature validation for client production clusters -->
+
+<!-- Checkpoint: 2026-05-04 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->

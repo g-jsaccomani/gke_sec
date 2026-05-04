@@ -518,3 +518,6 @@ All notable changes and security updates recorded below.
 ### [2026-05-01] sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams
 - Enforced Restricted Pod Security Standard admission controller across all non-system namespaces.
 
+### [2026-05-04] feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools
+- Enabled Shielded GKE Nodes with vTPM and kernel measurement verification.
+
