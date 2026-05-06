@@ -99,3 +99,5 @@ This guide defines the reference security architecture for Google Kubernetes Eng
 <!-- Checkpoint: 2026-04-25 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-05-01 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
+
+<!-- Checkpoint: 2026-05-06 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
