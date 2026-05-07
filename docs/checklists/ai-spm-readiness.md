@@ -92,3 +92,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 <!-- Checkpoint: 2026-05-04 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
 
 <!-- Checkpoint: 2026-05-05 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
+
+<!-- Checkpoint: 2026-05-07 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
