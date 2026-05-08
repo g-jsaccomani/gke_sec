@@ -242,3 +242,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-04-20 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
 
 <!-- Checkpoint: 2026-04-21 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-05-08 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
