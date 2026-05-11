@@ -244,3 +244,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-04-21 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
 
 <!-- Checkpoint: 2026-05-08 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-05-11 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
