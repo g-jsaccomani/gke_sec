@@ -55,3 +55,5 @@ Your report will be evaluated and responded to as soon as possible.
 <!-- Checkpoint: 2026-04-23 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
 
 <!-- Checkpoint: 2026-04-28 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-05-12 - sec(binary-auth): enforce container image signature validation for client production clusters -->
