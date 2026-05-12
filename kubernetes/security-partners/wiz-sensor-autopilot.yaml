@@ -1,0 +1,87 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: wiz-agent
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: wiz-sensor-ksa
+  namespace: wiz-agent
+---
+apiVersion: autopilot.gke.io/v1
+kind: WorkloadAllowlist
+metadata:
+  name: wiz-sensor-allowlist
+  namespace: wiz-agent
+spec:
+  partner: "Wiz"
+  workloads:
+    - name: "wiz-sensor"
+      allowedImages:
+        - "registry.wiz.io/wiz-sensor/*"
+      capabilities:
+        - SYS_ADMIN
+        - SYS_PTRACE
+        - NET_ADMIN
+        - IPC_LOCK
+      hostPaths:
+        - path: "/sys/kernel/debug"
+        - path: "/var/run"
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: wiz-sensor
+  namespace: wiz-agent
+  labels:
+    app.kubernetes.io/name: wiz-sensor
+spec:
+  selector:
+    matchLabels:
+      name: wiz-sensor
+  template:
+    metadata:
+      labels:
+        name: wiz-sensor
+    spec:
+      serviceAccountName: wiz-sensor-ksa
+      hostNetwork: true
+      hostPID: true
+      dnsPolicy: ClusterFirstWithHostNet
+      containers:
+        - name: wiz-sensor
+          image: registry.wiz.io/wiz-sensor/sensor:latest
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            privileged: true
+            readOnlyRootFilesystem: true
+            capabilities:
+              add:
+                - SYS_ADMIN
+                - SYS_PTRACE
+                - NET_ADMIN
+                - IPC_LOCK
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "1Gi"
+          volumeMounts:
+            - name: sys-debug
+              mountPath: /sys/kernel/debug
+              readOnly: true
+            - name: var-run
+              mountPath: /var/run
+              readOnly: false
+      volumes:
+        - name: sys-debug
+          hostPath:
+            path: /sys/kernel/debug
+        - name: var-run
+          hostPath:
+            path: /var/run
+
+# created by @jsaccomani

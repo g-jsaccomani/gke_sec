@@ -38,3 +38,6 @@ All notable changes and security updates recorded below.
 ### [2026-04-28] sec(secops): add Chronicle YARA-L runtime detection rule for anomalous container activity
 - Completed milestone deliverables and technical verification.
 
+### [2026-05-12] sec(wiz): deploy Wiz runtime sensor DaemonSet and network allowlist policies
+- Completed milestone deliverables and technical verification.
+

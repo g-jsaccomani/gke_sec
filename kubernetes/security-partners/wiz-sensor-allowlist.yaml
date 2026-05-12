@@ -1,0 +1,14 @@
+apiVersion: container.gke.io/v1alpha1
+kind: WorkloadAllowlist
+metadata:
+  name: wiz-runtime-sensor-allowlist
+  namespace: kube-system
+spec:
+  partner:
+    name: "Wiz"
+    allowList:
+    - daemonSet: "wiz-sensor"
+      container: "wiz-sensor"
+      privileged: true
+
+# created by @jsaccomani
