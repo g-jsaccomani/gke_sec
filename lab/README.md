@@ -246,3 +246,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-05-08 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
 
 <!-- Checkpoint: 2026-05-11 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
+
+<!-- Checkpoint: 2026-05-17 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
