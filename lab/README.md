@@ -248,3 +248,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-05-11 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
 
 <!-- Checkpoint: 2026-05-17 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
+
+<!-- Checkpoint: 2026-05-20 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
