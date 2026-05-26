@@ -41,3 +41,6 @@ All notable changes and security updates recorded below.
 ### [2026-05-12] sec(wiz): deploy Wiz runtime sensor DaemonSet and network allowlist policies
 - Completed milestone deliverables and technical verification.
 
+### [2026-05-26] feat(gitops): add ArgoCD application configuration for automated policy synchronization
+- Completed milestone deliverables and technical verification.
+
