@@ -61,3 +61,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-05-29 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
 
 <!-- Checkpoint: 2026-05-29 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-05-31 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
