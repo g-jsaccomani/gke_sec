@@ -65,3 +65,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-05-31 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
 
 <!-- Checkpoint: 2026-06-02 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-06-03 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
