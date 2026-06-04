@@ -109,3 +109,5 @@ This blueprint defines the unified architecture for Kubernetes workload protecti
 <!-- Checkpoint: 2026-06-01 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-06-02 - sec(binary-auth): enforce container image signature validation for client production clusters -->
+
+<!-- Checkpoint: 2026-06-04 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
