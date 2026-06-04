@@ -111,3 +111,5 @@ This guide defines the reference security architecture for Google Kubernetes Eng
 <!-- Checkpoint: 2026-05-15 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
 
 <!-- Checkpoint: 2026-05-25 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
+
+<!-- Checkpoint: 2026-06-04 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
