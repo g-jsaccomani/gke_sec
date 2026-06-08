@@ -113,3 +113,5 @@ This guide defines the reference security architecture for Google Kubernetes Eng
 <!-- Checkpoint: 2026-05-25 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
 
 <!-- Checkpoint: 2026-06-04 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
+
+<!-- Checkpoint: 2026-06-08 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
