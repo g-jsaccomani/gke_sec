@@ -44,3 +44,6 @@ All notable changes and security updates recorded below.
 ### [2026-05-26] feat(gitops): add ArgoCD application configuration for automated policy synchronization
 - Completed milestone deliverables and technical verification.
 
+### [2026-06-09] docs(architecture): add GKE hardening architecture blueprint and CIS benchmark checklists
+- Completed milestone deliverables and technical verification.
+
