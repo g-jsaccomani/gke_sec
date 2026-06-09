@@ -69,3 +69,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-06-03 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
 
 <!-- Checkpoint: 2026-06-04 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-06-09 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
