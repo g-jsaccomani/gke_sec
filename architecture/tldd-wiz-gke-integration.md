@@ -196,3 +196,5 @@ This matrix governs incident boundaries between the **Google Cloud PSO Team**, *
 <!-- Checkpoint: 2026-06-15 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
 
 <!-- Checkpoint: 2026-06-16 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
+
+<!-- Checkpoint: 2026-06-17 - sec(binary-auth): enforce container image signature validation for client production clusters -->
