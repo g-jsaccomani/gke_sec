@@ -108,3 +108,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 <!-- Checkpoint: 2026-06-09 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
 
 <!-- Checkpoint: 2026-06-11 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
+
+<!-- Checkpoint: 2026-06-18 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
