@@ -254,3 +254,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-05-22 - sec(binary-auth): enforce container image signature validation for client production clusters -->
 
 <!-- Checkpoint: 2026-05-23 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-06-18 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
