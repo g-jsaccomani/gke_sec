@@ -81,3 +81,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-06-16 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-06-22 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-06-23 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
