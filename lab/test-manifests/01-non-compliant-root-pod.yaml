@@ -1,0 +1,23 @@
+# LAB TEST 1: Intentionally non-compliant Pod
+# This pod violates Pod Security Admission (PSA) 'restricted' profile.
+# It requests: privileged mode, hostPID, and root UID 0.
+# EXPECTED OUTCOME: Kubernetes API Server MUST REJECT this pod admission.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: malicious-root-pod
+  namespace: payments-processing
+  labels:
+    test: compliance-rejection
+spec:
+  hostPID: true
+  containers:
+  - name: exploit-container
+    image: mirror.gcr.io/library/busybox:latest
+    command: ["/bin/sh", "-c", "sleep 3600"]
+    securityContext:
+      privileged: true
+      runAsUser: 0
+      allowPrivilegeEscalation: true
+
+# created by @jsaccomani
