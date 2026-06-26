@@ -112,3 +112,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 <!-- Checkpoint: 2026-06-18 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
 
 <!-- Checkpoint: 2026-06-24 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
+
+<!-- Checkpoint: 2026-06-26 - sec(binary-auth): enforce container image signature validation for client production clusters -->
