@@ -764,3 +764,6 @@ All notable changes and security updates recorded below.
 ### [2026-07-06] refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices
 - Enforced PeerAuthentication STRICT mode across the entire service mesh data plane.
 
+### [2026-07-06] docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client
+- Generated comprehensive CIS Kubernetes and CIS GKE 1.28 benchmark audit report.
+
