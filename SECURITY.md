@@ -63,3 +63,5 @@ Your report will be evaluated and responded to as soon as possible.
 <!-- Checkpoint: 2026-06-15 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
 
 <!-- Checkpoint: 2026-07-01 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
+
+<!-- Checkpoint: 2026-07-08 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
