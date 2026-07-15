@@ -114,3 +114,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 <!-- Checkpoint: 2026-06-24 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
 
 <!-- Checkpoint: 2026-06-26 - sec(binary-auth): enforce container image signature validation for client production clusters -->
+
+<!-- Checkpoint: 2026-07-15 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
