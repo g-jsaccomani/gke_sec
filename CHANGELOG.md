@@ -791,3 +791,6 @@ All notable changes and security updates recorded below.
 ### [2026-07-15] docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client
 - Generated comprehensive CIS Kubernetes and CIS GKE 1.28 benchmark audit report.
 
+### [2026-07-16] sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist
+- Deployed Open Policy Agent Gatekeeper constraints restricting image downloads to client Artifact Registry.
+
