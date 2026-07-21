@@ -118,3 +118,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 <!-- Checkpoint: 2026-07-15 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
 
 <!-- Checkpoint: 2026-07-20 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
+
+<!-- Checkpoint: 2026-07-21 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
