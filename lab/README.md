@@ -256,3 +256,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-05-23 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
 
 <!-- Checkpoint: 2026-06-18 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
+
+<!-- Checkpoint: 2026-07-22 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
