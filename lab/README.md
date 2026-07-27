@@ -258,3 +258,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-06-18 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
 
 <!-- Checkpoint: 2026-07-22 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
+
+<!-- Checkpoint: 2026-07-27 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
