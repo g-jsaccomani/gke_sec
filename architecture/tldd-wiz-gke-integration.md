@@ -208,3 +208,5 @@ This matrix governs incident boundaries between the **Google Cloud PSO Team**, *
 <!-- Checkpoint: 2026-07-08 - sec(binary-auth): enforce container image signature validation for client production clusters -->
 
 <!-- Checkpoint: 2026-07-16 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
+
+<!-- Checkpoint: 2026-07-28 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
