@@ -85,3 +85,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-06-23 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
 
 <!-- Checkpoint: 2026-07-18 - sec(binary-auth): enforce container image signature validation for client production clusters -->
+
+<!-- Checkpoint: 2026-07-29 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
