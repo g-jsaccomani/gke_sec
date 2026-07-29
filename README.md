@@ -315,3 +315,5 @@ For the step-by-step guide with 10 practical lab modules, see **[lab/README.md](
 <!-- Checkpoint: 2026-07-22 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
 
 <!-- Checkpoint: 2026-07-27 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-07-29 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
