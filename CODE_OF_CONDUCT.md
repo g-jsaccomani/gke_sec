@@ -91,3 +91,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-07-29 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
 
 <!-- Checkpoint: 2026-07-31 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
+
+<!-- Checkpoint: 2026-08-01 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
