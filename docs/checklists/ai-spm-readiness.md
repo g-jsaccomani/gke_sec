@@ -122,3 +122,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 <!-- Checkpoint: 2026-07-21 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
 
 <!-- Checkpoint: 2026-07-31 - sec(binary-auth): enforce container image signature validation for client production clusters -->
+
+<!-- Checkpoint: 2026-08-02 - feat(shielded-nodes): enable secure boot and integrity monitoring for client node pools -->
