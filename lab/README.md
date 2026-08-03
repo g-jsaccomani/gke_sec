@@ -262,3 +262,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-07-27 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
 
 <!-- Checkpoint: 2026-08-02 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
+
+<!-- Checkpoint: 2026-08-03 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
