@@ -128,3 +128,5 @@ This checklist acts as a technical validation schema for Google Cloud PSO teams 
 <!-- Checkpoint: 2026-08-02 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
 
 <!-- Checkpoint: 2026-08-04 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
+
+<!-- Checkpoint: 2026-08-05 - sec(pod-security): roll out Pod Security Standards baseline policies for client dev teams -->
