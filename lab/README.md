@@ -266,3 +266,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-08-03 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
 
 <!-- Checkpoint: 2026-08-06 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
+
+<!-- Checkpoint: 2026-08-09 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
