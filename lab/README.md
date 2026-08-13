@@ -268,3 +268,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-08-06 - docs(cis-benchmark): publish GKE CIS benchmark compliance audit for external client -->
 
 <!-- Checkpoint: 2026-08-09 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
+
+<!-- Checkpoint: 2026-08-13 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
