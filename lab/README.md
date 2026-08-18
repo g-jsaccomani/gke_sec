@@ -270,3 +270,5 @@ Execute the automated validation script:
 <!-- Checkpoint: 2026-08-09 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
 
 <!-- Checkpoint: 2026-08-13 - refactor(asm-mtls): configure strict mTLS in Anthos Service Mesh for customer microservices -->
+
+<!-- Checkpoint: 2026-08-18 - fix(network-policy): restrict inter-namespace egress traffic in customer multi-tenant cluster -->
