@@ -99,3 +99,5 @@ Examples of behavior that contributes to a positive environment include:
 <!-- Checkpoint: 2026-08-17 - sec(binary-auth): enforce container image signature validation for client production clusters -->
 
 <!-- Checkpoint: 2026-08-17 - feat(workload-identity): migrate service accounts to fine-grained Workload Identity for client apps -->
+
+<!-- Checkpoint: 2026-08-20 - sec(admission-controller): add Gatekeeper OPA constraints for client image registry whitelist -->
