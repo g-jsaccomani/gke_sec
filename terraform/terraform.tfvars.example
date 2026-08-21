@@ -1,0 +1,39 @@
+# Target Google Cloud Project ID
+project_id = "your-gcp-project-id"
+
+# Target GCP Deployment Region & Zone
+region = "us-central1"
+zone   = "us-central1-a"
+
+# Cluster & VPC Networking Identifiers
+cluster_name = "hardened-gke-cluster"
+network_name = "gke-security-vpc"
+subnet_name  = "gke-cde-subnet"
+
+# IP CIDR Allocations
+subnet_cidr            = "10.10.0.0/20"
+pods_cidr              = "10.20.0.0/16"
+services_cidr          = "10.30.0.0/20"
+master_ipv4_cidr_block = "172.16.0.0/28"
+
+# Control Plane Access Mode
+# Set to false for lab direct access with Master Authorized Networks
+# Set to true for strict enterprise private-only access via Bastion/PSC
+enable_private_endpoint = false
+
+# Master Authorized Networks (Replace with your public IP /32 or Bastion CIDR)
+authorized_ipv4_cidr_blocks = [
+  {
+    cidr_block   = "0.0.0.0/0"
+    display_name = "admin-access"
+  }
+]
+
+# Lab & Compliance Toggles
+enable_org_policies     = false # Set to true if running with Org Admin permissions
+enable_cortex_logging   = false # Set to true if integrating with Cortex XSIAM / PubSub folder sink
+enable_access_approval  = false # Set to true if using GCP Access Approval
+enable_sandbox_nodepool = true  # Enable gVisor sandbox node pool for untrusted/AI workloads
+kms_protection_level    = "SOFTWARE" # Use "HSM" for strict FIPS 140-2 Level 3 compliance
+
+# created by @jsaccomani
