@@ -4,9 +4,12 @@ on:
     branches:
       - main
   pull_request:
+    branches:
+      - main
 
 jobs:
   trufflehog:
+    name: TruffleHog OSS
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -17,5 +20,3 @@ jobs:
         uses: trufflesecurity/trufflehog@main
         with:
           extra_args: --results=verified,unknown
-
-# created by @jsaccomani
